@@ -11,3 +11,4 @@ Tracks
    track-modes.rst
    track-layering.rst
    channel-configuration.rst
+   track-ordering.rst
