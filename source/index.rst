@@ -19,3 +19,4 @@ Audio Workstation (DAW):
    ardour-configuration/index
    interface/index
    sessions-tracks/index
+   playback/index
