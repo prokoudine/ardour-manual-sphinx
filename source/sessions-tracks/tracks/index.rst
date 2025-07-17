@@ -15,3 +15,4 @@ Tracks
    track-color.rst
    track-height.rst
    waveform-display.rst
+   track-context-menu.rst
