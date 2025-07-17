@@ -12,3 +12,4 @@ Tracks
    track-layering.rst
    channel-configuration.rst
    track-ordering.rst
+   track-color.rst
