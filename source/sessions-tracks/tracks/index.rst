@@ -14,3 +14,4 @@ Tracks
    track-ordering.rst
    track-color.rst
    track-height.rst
+   waveform-display.rst
