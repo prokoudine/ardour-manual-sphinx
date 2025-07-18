@@ -21,3 +21,4 @@ Audio Workstation (DAW):
    sessions-tracks/index
    playback/index
    recording/index
+   importing-exporting/index
