@@ -20,3 +20,4 @@ Audio Workstation (DAW):
    interface/index
    sessions-tracks/index
    playback/index
+   recording/index
