@@ -22,3 +22,4 @@ Audio Workstation (DAW):
    playback/index
    recording/index
    importing-exporting/index
+   editing/index
