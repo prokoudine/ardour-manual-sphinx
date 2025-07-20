@@ -25,3 +25,4 @@ Audio Workstation (DAW):
    editing/index
    midi/index
    clips/index
+   cue/index
