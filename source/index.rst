@@ -24,3 +24,4 @@ Audio Workstation (DAW):
    importing-exporting/index
    editing/index
    midi/index
+   clips/index
