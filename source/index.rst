@@ -26,3 +26,4 @@ Audio Workstation (DAW):
    midi/index
    clips/index
    cue/index
+   arranging/index
