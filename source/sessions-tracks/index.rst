@@ -1,5 +1,5 @@
 Sessions and tracks
-==================
+===================
 
 .. toctree::
    :maxdepth: 1

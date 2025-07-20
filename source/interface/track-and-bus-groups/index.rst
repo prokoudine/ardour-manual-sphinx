@@ -1,4 +1,4 @@
-.. _track_and_bus_groups
+.. _track_and_bus_groups:
 
 Track and bus groups
 ====================

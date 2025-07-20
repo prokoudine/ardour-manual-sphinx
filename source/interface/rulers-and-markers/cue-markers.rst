@@ -12,7 +12,7 @@ Cue markers are displayed in the Location Markers ruler.
 
    Cue markers on the Location Markers ruler
 
-.. _adding-cure-markers:
+.. _adding-cue-markers:
 
 Adding cue markers
 ------------------
@@ -33,14 +33,14 @@ Left-clicking and dragging moves a single marker to a new location on the timeli
 
 It is possible to move multiple markers by the same distance. :kbd:`Ctrl`-left-clicking each marker creates a selection of markers that can be dragged left or right together.
 
-.. _moving_single_marker:
+.. _moving_single_cue_marker:
 
 Single marker
 -------------
 
 Left-clicking and dragging moves a single marker to a new location on the timeline.
 
-.. _moving_multiple_markers:
+.. _moving_multiple_cue_markers:
 
 Multiple markers
 ----------------

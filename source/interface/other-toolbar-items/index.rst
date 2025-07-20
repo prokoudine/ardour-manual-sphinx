@@ -33,7 +33,7 @@ The two buttons in this section control the behaviour of the playhead.
    The playhead options
 
 -  **Follow Range** is a toggle that can be used to control whether or not making a range selection will move the playhead to the start of the range.
--  **Auto Return** is a toggle switch too. When active, pressing the **Stop** button returns the playhead to its previous position, and when inactive, pressing Stop keeps the playhead at its current location. Activating **Auto Return` can be useful for hearing the same piece of audio before and after tweaking it, without having to set a loop range on it.
+-  **Auto Return** is a toggle switch too. When active, pressing the **Stop** button returns the playhead to its previous position, and when inactive, pressing Stop keeps the playhead at its current location. Activating **Auto Return** can be useful for hearing the same piece of audio before and after tweaking it, without having to set a loop range on it.
 
 .. _status_indicators:
 
