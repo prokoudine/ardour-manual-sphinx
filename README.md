@@ -20,4 +20,5 @@ The following command builds an HTML version of the user manual:
 - [ ] Fix all the broken references (clean rebuild shows them all)
 - [ ] Clean up formatting (replace `:menuselection:` and `:guilabel:` with bold text)
 - [ ] Set up CI (deployment, linting)
+- [ ] (Optional) Set up versioning so it's possible to switch between e.g. 8.12 and 9.0
 - [ ] Take care of redirects where possible
