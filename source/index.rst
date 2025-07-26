@@ -28,3 +28,4 @@ Audio Workstation (DAW):
    cue/index
    arranging/index
    mixing/index
+   bundled-plugins/index
