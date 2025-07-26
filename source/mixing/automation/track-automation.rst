@@ -6,6 +6,7 @@ Track automation
 .. figure:: images/automation-menu1.png
    :alt: The top-level automation menu
    :class: right-float
+   :width: 25%
 
 A parameter on a given track can be automated by clicking on the track's
 **A** button and selecting a parameter to control from the menu that
@@ -57,8 +58,8 @@ automation curve will remain as it was.
 
 .. note::
    **Touch** mode is useful when only small parts of the automation
-curve need touching up versus **Write** mode, which is usually used to
-create the automation curve in the first place.
+   curve need touching up versus **Write** mode, which is usually
+   used to create the automation curve in the first place.
 
 Drawing an automation curve using the mouse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
