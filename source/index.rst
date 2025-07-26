@@ -29,3 +29,4 @@ Audio Workstation (DAW):
    arranging/index
    mixing/index
    bundled-plugins/index
+   video/index
