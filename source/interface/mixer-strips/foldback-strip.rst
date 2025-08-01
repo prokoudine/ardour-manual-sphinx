@@ -7,7 +7,7 @@ Foldback strip
    :alt: The foldback strip
    :class: right-float
 
-The **Foldback** section is an optional feature that provides stage monitoring mixes. Many times the main mix is used for this purpose is a setup with only the control room. However, for a separate studio and multiple monitor mixes for in-ear use, a separate set of foldback buses provides that flexibility.
+The **Foldback** section is an optional feature that provides stage monitoring mixes. Many times the main mix is used for this purpose in a setup with only the control room. However, for a separate studio and multiple monitor mixes for in-ear use, a separate set of foldback buses provides that flexibility.
 
 These foldback buses may be mono for a stage monitor wedge or stereo to allow in-ear or headphones to have different mixes for each ear, such as one's self in one ear and the rest of the music in the other.
 
@@ -20,7 +20,7 @@ Foldback sends can be created from the processor box context menu by selecting *
 
 A second method is to select all the source channels and then use the foldback bus sendbox context menu and select either **Assign Selected Tracks** or **Assign Selected Tracks and Buses**.
 
-The **View > Mixer: Show Foldback Strip** checkbox will determine if the foldback strip is visible. The foldback strip appears Just to the left of the Master strip in the Mixer window. It comprises:
+The **View > Mixer: Show Foldback Strip** checkbox will determine if the foldback strip is visible. The foldback strip appears just to the left of the Master strip in the Mixer window. It comprises:
 
 #. Previous and Next buttons
 #. Hide button
@@ -48,7 +48,7 @@ The hide button hides the Foldback strip when not being adjusted. The foldback s
 Name button
 -----------
 
-The name button shows the name of the current foldback bus. It has two menus the foldback bus selection menu, activated with a left-click and the context menu, activated with right-clicking. The context menu has these items in it:
+The name button shows the name of the current foldback bus. It has two menus: the foldback bus selection menu, activated with a left-click, and the context menu, activated with right-clicking. The context menu has these items in it:
 
 -  Comments is the same as the Comments button at the bottom of the strip
 -  Outputs shows the output routing grid
