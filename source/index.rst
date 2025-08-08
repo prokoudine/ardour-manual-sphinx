@@ -30,3 +30,4 @@ Audio Workstation (DAW):
    mixing/index
    bundled-plugins/index
    video/index
+   control-surfaces/index
