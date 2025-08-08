@@ -31,3 +31,4 @@ Audio Workstation (DAW):
    bundled-plugins/index
    video/index
    control-surfaces/index
+   troubleshooting/index
