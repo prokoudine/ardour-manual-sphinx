@@ -32,3 +32,4 @@ Audio Workstation (DAW):
    video/index
    control-surfaces/index
    troubleshooting/index
+   scripting/index
