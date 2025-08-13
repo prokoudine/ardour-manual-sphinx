@@ -33,3 +33,4 @@ Audio Workstation (DAW):
    control-surfaces/index
    troubleshooting/index
    scripting/index
+   appendix/index
