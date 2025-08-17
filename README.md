@@ -15,7 +15,7 @@ The following command builds an HTML version of the user manual:
 ## TODO
 
 - [X] Pick an initial theme
-- [ ] Do the the port (pandoc to convert + images)
+- [x] Do the port (pandoc to convert + images)
 - [ ] Restructure the guide (parts of the Interface chapter belong to Editing and Mixing)
 - [ ] Fix all the broken references (clean rebuild shows them all)
 - [ ] Clean up formatting (replace `:menuselection:` and `:guilabel:` with bold text)
