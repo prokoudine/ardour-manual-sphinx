@@ -22,7 +22,7 @@ Preferences are conveniently grouped by category:
    -  `Editor <#preferences-appearance-editor>`__
    -  `Waveform <#preferences-appearance-waveform>`__
    -  `Mixer <#preferences-appearance-mixer>`__
-   -  `Toolbar <#preferences-appearance-toolbar>`__
+   -  `Toolbar <#preferences-appearance-application-bar>`__
    -  `Size and Scale <#preferences-appearance-size-and-scale>`__
    -  `Colors <#preferences-appearance-colors>`__
    -  `Quirks <#preferences-appearance-quirks>`__
@@ -73,23 +73,27 @@ General
    -  **Save undo history** sets how many commands are saved so they are available to be undone after reopening the session. This can also be unchecked to keep all actions undoable, at the cost of bigger session files.
    -  **Verify removal of last capture** when enabled prompts to verify removal the last recording capture when **Edit > Remove Last Capture** is executed.
 
--  **Session Management**:
+-  **Session Management**
 
    -  **Make periodic backups of the session file** will create a backup session file after changes to the timeline. The backup file is the session name followed by ``.ardour.bak``. The backup can be used to recover from crashes when the session had not been explicitly saved.
    -  **Default folder for new sessions**: defaults the folder where Ardour will create new session folders. This is used in the **Session Setup** dialog displayed by **Session > New**.
    -  **Maximum number of recent sessions**: determines how many of the last opened sessions shows in the **Recent Sessions** dialog displayed by **Session > Recent**.
 
--  **Import**:
+-  **Selection**
+
+   -  **Group operations on selected tracks**: this controls the behavior where selecting multiple tracks in the mixer and e.g. dragging the gain fader in one track drags faders in other selected tracks by the same amount.
+
+-  **Import**
 
    -  **Drag and drop import always copies files to session** selects, and then disables changes to, the **Copy files to session** option in the :ref:`Add Existing Media <import_dialog>` dialog.
    -  **Cache Folder for downloaded Freesound clips**: when you try sounds form FreeSound.org before inserting them into the project, they need to be saved locally on your computer; this is where you define the folder for those temporary files.
 
--  **Export**:
+-  **Export**
 
    -  **Save loudness analysis as image file after export** allows, when the **Analyze Exported Audio** is checked in the :ref:`Export dialog <export_dialog>`, to save the analysis graph as a file named ``session.png`` alongside the exported audio file(s) (in the same folder).
    -  **Save Mixer screenshot after export** creates and exports a graphical image of the Mixer window as a file named ``session-mixer.png`` alongside the exported audio file(s) (in the same folder).
 
--  **New Version Check**:
+-  **New Version Check**
 
    -  **Check for announcements at application start** sends an anonymous request to Ardour's server to check for a new version.
 
@@ -98,19 +102,19 @@ General
 Appearance
 ----------
 
--  **GUI Lock**:
+-  **GUI Lock**
 
    -  **Lock timeout (seconds)**: locks the GUI after this many idle seconds (zero being 'never lock'). The GUI can also be locked with **Session > Lock**. When locked, a dialog will display a **Click to unlock` button.
    -  **System Screensaver Mode**: can be used to prevent the screensaver to be launched by the system, either while recording (e.g. for long and unattended recording session), when Ardour is simply started, or never (the screensaver is then able to start).
 
--  **Theme**:
+-  **Theme**
 
    -  **Color faders with track/bus colors**: when enabled, fills faders for tracks and busses with respective track or bus colors.
    -  **Draw "flat" buttons**: when enabled, button controls in the user interface will be drawn with a flat look. When disabled button controls will have a slight 3D appearance.
    -  **Draw "boxy" buttons**: when enabled, button controls in the user interface will have square corners instead of being slightly rounded.
    -  **LED meter style** if checked, the bar meters in the editor and mixer will be styled to look like if they were made of LEDs, with a dotted bar. Unchecking this option makes the bars flat and continuous.
 
--  **Graphical User Interface**:
+-  **Graphical User Interface**
 
    -  **Highlight widgets on mouseover**, when checked, makes Ardour's widgets (buttons, sliders, …) slightly change color when the mouse hovers them, visually indicating what a mouse action would interact with.
    -  **Show tooltips if mouse hovers over a control**: when checked, displays a little help bubble about the control the mouse hovers. The mouse pointer needs to stay idle for about 1 sec for the tooltip to appear.
@@ -118,7 +122,7 @@ Appearance
    -  **Blink Rec-Arm buttons**: when enabled, the record-armed buttons on tracks will blink when they are armed but not currently recording. When disabled, the record-armed buttons on tracks will be outlined in red instead of blinking. The global record-arm button in the :ref:`Transport bar <transport_bar>` is unaffected.
    -  **Blink Alert indicators**: when enabled, the Alert indicators (like the **Error Log** or the **Feedback** button) will blink when they are active (when an error or feedback has been detected, respectively). When disabled, the indicators will turn red instead of blinking.
 
--  **Graphics Acceleration**:
+-  **Graphics Acceleration**
 
    -  **Use intermediate image-surface to render canvas (requires restart)**: Ardour uses hardware accelerated UI rendering by default for speed. Sometimes though, a buggy driver can cause this to make the system slow or unstable. Checking this will make Ardour draw its UI without hardware acceleration, in software, improving stability and responsiveness on those buggy systems at the expense of speed.
 
@@ -127,7 +131,7 @@ Appearance
 Recorder
 ~~~~~~~~
 
--  **Input Meter Layout**:
+-  **Input Meter Layout**
 
    -  **Input Meter Layout**: in Recorder mode, determines if audio inputs
       are displayed horizontally or vertically.
@@ -137,7 +141,7 @@ Recorder
 Editor
 ~~~~~~
 
--  **General**:
+-  **General**
 
    -  **Use name highlight bars in region displays (requires a restart)**:
       when enabled, the region name is displayed, in the editor, in its
@@ -170,7 +174,7 @@ Editor
       audio regions fit the height of the track or leave a gap at the
       bottom, either small or large.
 
--  **Editor Meters**:
+-  **Editor Meters**
 
    -  **Show meters in track headers**: when enabled, shows a small meter in
       the Editor's :ref:`track headers <audio_track_controls>`. The meter
@@ -181,7 +185,7 @@ Editor
       the track header to the first two ones. Only affects audio meters,
       not MIDI.
 
--  **MIDI Regions**:
+-  **MIDI Regions**
 
    -  **Display first MIDI bank/program as 0**: when patches and bank
       changes are displayed in the editor, if this option is checked,
@@ -210,7 +214,7 @@ Editor
 Waveform
 ~~~~~~~~
 
--  **Editor Waveforms**:
+-  **Editor Waveforms**
 
    -  **Show waveforms in regions**: when enabled, shows a visual
       representation of the region's audio waveform.
@@ -236,30 +240,30 @@ Waveform
 Mixer
 ~~~~~
 
--  **Mixer Strip**:
+-  **Mixer Strip**
 
    -  This table enables (checked) or disables (unchecked) the display of controls in the :ref:`mixer strip <audiomidi_mixer_strips>`. Controls whose display can be toggled are: **Input**, **Phase Invert**, **Record & Monitor**, **Solo Iso/Lock**, **Output**, **Comments** and VCA Assigns.
    -  **Use narrow strips in the mixer for new strips by default**: when enabled, new mixer strips are created in narrow format. When disabled, they are created in wide format. Existing mixer strips width can be toggled with the width control at the top left of the mixer strip.
    -  **Limit inline-mixer-strip controls per plugin**: Whether or not, and how many, controls each plugin can show in the mixer strip. These mixer-strip controls are added by checking **plugin context-menu > Controls > □ control parameter**.
 
-.. _preferences_appearance_toolbar:
+.. _preferences_appearance_application_bar:
 
-Toolbar
-~~~~~~~
+Application Bar
+~~~~~~~~~~~~~~~
 
 -  **Main Transport Toolbar Items**: this section allows to toggle the
    visibility of some elements of the main toolbar:
 
    -  **Display Record/Punch Options**: toggles the visibility of the :ref:`punch and record <punch_controls>` slice of the main toolbar.
-   -  **Display Latency Compensation Info**: toggles the visibility of the **Latency Compensation** slice of the main toolbar.
+   -  **Display Plugin Delay Compensation Control and Info**: toggles the visibility of the **Latency Compensation** slice of the main toolbar.
    -  **Display Secondary Clock**: toggles the visibility of the :ref:`secondary clocks <transport_clocks>` slice of the main toolbar.
-   -  **Display Selection Clock**: toggles the visibility of the :ref:`selection clocks <selection_clocks>` slice of the main toolbar.
-   -  **Display Monitor Section Info**: toggles the visibility of the **Monitor Info** slice of the main toolbar.
    -  **Display Cue Rec/Play Controls**: toggles the visibility of the buttons that enable creating and playing back cue markers.
+   -  **Display Selection Clock**: toggles the visibility of the :ref:`selection clocks <selection_clocks>` slice of the main toolbar.
    -  **Display Navigation Timeline**: toggles the visibility of the :ref:`navigation/mini timeline <mini_timeline>` slice of the main toolbar.
    -  **Display Master Level Meter**: toggles the visibility of the :ref:`selection clocks <other_toolbar_items_mode_selector>` slice of the main toolbar.
+   -  **Display Monitor Section Info**: toggles the visibility of the **Monitor Info** slice of the main toolbar.
 
--  **Display Action-Buttons**:
+-  **Display Action-Buttons**
 
    -  Column *n* enables or disables the visibility of the six possible columns of :ref:`Lua script buttons <other_toolbar_items_mode_selector>`. Each columns contains two user-assignable buttons.
 
@@ -268,16 +272,17 @@ Toolbar
 Size and Scale
 ~~~~~~~~~~~~~~
 
--  **User Interface Size and Scale**:
+-  **User Interface Size and Scale**
 
    -  **GUI and Font scaling**: allows the display size of most of the text and buttons in the user interface to be scaled up or down. May require a restart to take effect.
+   - **Drag deadzone**: provides broad control over how many pixels the pointer must move before a drag (or copy-drag) begins.
 
 .. _preferences_appearance_colors:
 
 Colors
 ~~~~~~
 
--  **Colors**:
+-  **Colors**
 
    -  **Color Theme** allows to switch between some presets bundled with
       Ardour, changing both the palette and items colors, hence styling
@@ -321,7 +326,7 @@ Quirks
 Translation
 ~~~~~~~~~~~
 
--  **Internationalization**:
+-  **Internationalization**
 
    -  **Use translations**: sets if Ardour should use a translated version of all the messages. The default (unchecked) is English (US). When checked, and if a language file exists for the system language, this file will be used to translate Ardour.
 
@@ -330,7 +335,7 @@ Translation
 Regions
 ~~~~~~~
 
--  **Region Information**:
+-  **Region Information**
 
    -  **Show xrun markers in regions**: puts a marker on the region(s) while recording, when a buffer over/underflow happens.
    -  **Show cue markers in regions**: determines if cue markers, that are bounded to regions, are displayed or not.
@@ -341,7 +346,7 @@ Regions
 Editor
 ------
 
--  **Scroll and Zoom Behaviors**:
+-  **Scroll and Zoom Behaviors**
 
    -  **Zoom to mouse position when zooming with scroll wheel**: by default, Ardour zooms to the :ref:`edit point <edit_point_control>`. When this option is checked, and the zoom is done with + mousewheel, the zoom will happen at the mouse cursor position regardless of the edit point chosen.
    -  **Zoom with vertical drag in rulers allows**: when checked, to click anywhere in an empty zone of the :ref:`ruler <ruler>` zone and drag up to zoom in or down to zoom out.
@@ -351,7 +356,7 @@ Editor
    -  **Auto-scroll speed when dragging playhead**: chooses how fast the canvas scrolls when dragging the playhead outside of the visible canvas.
    -  **Limit zoom & summary view beyond session extents to**: prevents the zoom out both in the editor and the summary, to show anything past the chosen time after the end marker, restraining the vision to only useful content.
 
--  **Editor Behaviour**:
+-  **Editor Behaviour**
 
    -  **Move relevant automation when audio regions are moved**: when enabled, causes automation data to stay with a region when the region is moved inside the playlist. When disabled, the automation is not affected by movement of regions.
    -  **Ignore Y-axis click position when adding new automation-points**: allows to create new automation points at the x-position of the mouse, without using the Y-position as the value, hence creating a new automation point at its present value.
@@ -360,7 +365,7 @@ Editor
    -  **Regions in edit groups are edited together**: sets the criteria to see if editing actions apply to tracks grouped together in an group.
    -  **Layering model**: Ardour allows :ref:`layering <layering_display>` multiple regions in the same track. This selector defines how these layers are managed, either manually or by placing the latest on top.
 
--  **Split/Separate**:
+-  **Split/Separate**
 
    -  **After a Separate operation, in Range mode**: determines what should become of the range selection after a **Separate** operation:
 
@@ -376,12 +381,16 @@ Editor
       -  **Select the newly-created regions**: sum of the two above, i.e. all the regions that are created as a result of the split are selected.
       -  **Preserve the existing selection, AND select all newly-created regions**: same as above (all the parts that have been created by the split) plus the unaffected regions that were selected before the split.
 
+-  **Region Editing**
+
+   -  **Region Editing Preference**: this controls whether double-clicking to edit a region opens a new window or uses the bottom panel of the editor.
+
 .. _preferences_editor_snap:
 
 Snap
 ~~~~
 
--  **General Snap options**:
+-  **General Snap options**
 
    -  **Snap Threshold (pixels)**: is the maximum distance between a snap
       anchor and an object for Ardour to force the object to be placed
@@ -406,7 +415,7 @@ Snap
       from one mode to the other.
    -  **Rulers automatically change to follow the Grid mode selection**: if enabled, changing the Grid mode also makes the relevant :ref:`ruler <ruler>` visible, while hiding the other ones.
 
--  **Snap Target Mode**:
+-  **Snap Target Mode**
 
    -  **When "Snap" is enabled, snap to**: lists the different possible
       anchors to which an object should snap to, among:
@@ -418,7 +427,7 @@ Snap
       -  Region Ends
       -  Grid
 
--  **Snap Targets**:
+-  **Snap Targets**
 
    -  Markers: whether markers are snap targets
    -  Playhead: whether the playhead is a snap targets
@@ -496,7 +505,7 @@ press Enter to confirm.
 Transport
 ---------
 
--  **General**:
+-  **General**
 
    -  **Prompt for new marker names** when enabled, popup a dialog when a new :ref:`marker <working_with_markers>` is created. This allows markers to be named as they are created.
    -  **Stop at the end of the session** causes the transport to stop during playback when it reaches the end marker. Behavior during recording is not changed.
@@ -509,6 +518,8 @@ Transport
    -  **Preroll**: sets the duration of the preroll for playing and recording when using a preroll. Can be a musical duration (in bars) or a duration in seconds.
    -  **Create a marker when a MIDI program change is received (and RECORDING)** allows capturing a MIDI program change when recording from an external MIDI device.
    -  **Locate to the next matching scene marker when a MIDI program change is received (and NOT recording)**: allows moving the playhead to a previously captured MIDI scene event when received a MIDI program change.
+   -  **Stop transport using the current grid (if any)**: if enabled, stopping the transport (playback or recording) will happen at the next grid point instead of immediately.
+
 
 -  **Looping**
 
@@ -670,6 +681,11 @@ GUI
       the plugins GUI as soon as it is added to the processing box. If
       unchecked, the plugin will be added in the processor box but the
       GUI will only be shown when double clicking it.
+   -  **Automatically open instrument plugin GUI when adding a new MIDI
+      Track/Bus**. Ardour defaults to automatically showing instrument plugin
+      GUIs when new tracks/busses with instruments are added. If multiple
+      tracks are added, Ardour will only show the GUI for the first one.
+      This setting allows to opt out of that behavior.
    -  **Show only one plugin window at a time**: when enabled, only one
       plugin window will be displayed on the screen; when disabled, you
       can open as many plugin windows as you like.
@@ -685,12 +701,22 @@ GUI
    -  **Show Plugin Inline Display on Mixer strip by default** allows Ardour to show, in the :ref:`mixer strips <audiomidi_mixer_strips>`, a visual rendering of the effect. These Inline Display are a special feature of Ardour, so not all plugins are able to show this display. Most of Ardour's :ref:`own plugins <bundled_plugins>` have an Inline Display. At any time, the plugin's inline display can be toggled on or off by double-clicking it.
    -  **Don't automatically open the plugin GUI when the plugin has an inline display mode**: this option, available only if **Automatically open the plugin GUI when adding a new plugin** is checked, supercedes it and hides the plugin GUI at creation if it has an Inline Display, like Ardour's own ``ACE *`` plugins.
 
+-  **VST3 UI**
+
+   -  **Automatically show 'Micro Edit tagged controls on the
+      mixer-strip**: displays the plugin's UI directly inside each mixer
+      strip (inline), if the plugin has a 'Micro Edit' tag.
+   -  **VST3 Knob Mode**: Enforce a knob mode for VST3 plugins: use plugin
+      default or switch between linear (depends on vertical movement) and
+      two variation of circular, with and without a jump to a clicked
+      position.
+
 .. _preferences_plugins_vst:
 
 VST
 ~~~
 
--  **VST**:
+-  **VST**
 
    -  **Enable Mac VST2 support (requires restart or re-scan)** makes a
       MacOs system able to run VST-Mac plugins. As stated, a new scan
@@ -700,7 +726,7 @@ VST
    -  **Enable VST3 support (requires restart or re-scan)** makes any system
       able to run VST3 plugins.
 
--  **VST 2.x**:
+-  **VST 2.x**
 
    -  **VST 2 Cache**: Clicking the **Clear` button removes all VST plugins from the list of plugins available to be inserted into the processor box. A new VST plugin scan is then required.
    -  **VST 2 Ignorelist**: Clicking the **Clear` button makes ignored VST plugins available to be added to the processor box.
@@ -717,9 +743,6 @@ VST
       host application should look for plugins. Although Ardour provides
       a way to search other directories for plugin, it is out of spec
       and not recommended.
-   -  **Automatically show 'Micro Edit** tagged controls on the
-      mixer-strip**: displays the plugin's UI directly inside each mixer
-      strip (inline), if the plugin has a 'Micro Edit' tag.
 
 -  **VST2/VST3**
 
