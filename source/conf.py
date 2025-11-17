@@ -9,7 +9,7 @@
 project = 'Ardour'
 copyright = '2025, The Ardour Team'
 author = 'The Ardour Team'
-release = '8.12'
+release = '9.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
