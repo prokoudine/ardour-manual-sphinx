@@ -7,8 +7,8 @@ Ardour's handling of MIDI and how it allows the editing of MIDI data differs in 
 
 Here are the key features of MIDI editing in Ardour:
 
-- All editing is done in-place, in-window; there is no separate piano
-  roll window or pane. Notes are edited right where they appear.
+- Editing is done either in-place and in-window, in a separate pianoroll
+  window, or a bottom panel editor. Notes are edited right where they appear.
 - Editing note information in Ardour occurs in only a single region.
   There is no way currently to edit note data for multiple regions at
   the same time; so, for example, notes cannot be selected in several
@@ -32,6 +32,7 @@ Here are the key features of MIDI editing in Ardour:
    :maxdepth: 1
    :caption: Contents
 
+   pianoroll-window.rst
    controlling-midi-range.rst
    add-new-notes.rst
    handling-overlapping-notes.rst
