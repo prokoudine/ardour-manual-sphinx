@@ -11,4 +11,5 @@ Cue
    cue-window-elements/index
    setting-up-cues/index
    recording-cues/index
+   editing-cues/index
    mixing-linear-nonlinear-workflows/index
