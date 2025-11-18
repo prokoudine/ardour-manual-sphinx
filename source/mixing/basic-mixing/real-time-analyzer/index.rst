@@ -33,7 +33,7 @@ Reading the spectrum display
 The perceptual analyzer displays how much power (dB) each part of the
 sound spectrum (Hz) contains. The horizontal axis represents frequency
 from low (20Hz) on the left to high (20kHz) on the right, while the
-vertical axis shows power level going from 0dB at the top to -60dB at
+vertical axis shows power level going from 6dB at the top to -80dB at
 the bottom.
 
 .. figure:: images/rta-chart.png
@@ -44,7 +44,9 @@ Taller "peaks" indicate frequencies with more power, while "valleys"
 show frequencies with less power.
 
 Hovering over the chart displays the frequency/power pair at the bottom
-of the dialog numerically.
+of the dialog numerically. To see the opposite ends of the power range
+(0db to 6ddB and -60dB to -80dB), hover over the right side of the dialog
+and the the scrollbar.
 
 As audio plays, the display updates continuously. It's possible to
 temporarily pause the visual update of the spectrum display to inspect
