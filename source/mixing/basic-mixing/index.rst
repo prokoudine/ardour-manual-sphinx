@@ -12,9 +12,11 @@ Basic mixing
    signal-routing/index
    bundle-manager/index
    aux-sends/index
-   auxes-vs-groups/index   
+   auxes-vs-groups/index
    external-sends/index
    inserts/index
+   track-and-bus-groups/index
+   quick-groups/index
    subgrouping/index
    patchbay/index
    signal-flow/index
@@ -23,3 +25,5 @@ Basic mixing
    panning/index
    mixer-scenes/index
    loudness-analyzer-and-normalizer/index
+   real-time-analyzer/index
+   monitor-section/index
