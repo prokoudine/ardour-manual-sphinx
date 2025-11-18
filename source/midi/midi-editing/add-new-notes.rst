@@ -14,12 +14,17 @@ Drawing notes with the mouse requires that a MIDI track
 :ref:`exists <create_midi_tracks>`, and a blank MIDI region has been
 :ref:`created <create_midi_regions>` in this track.
 
-In either **Draw** or **Internal Edit** `mode <toolbox>` new notes can
-be added with a click or drag: a mouse *click* creates a note at the
-pointer location (or the nearest grid anchor if grid is enabled), and
-its duration is one :ref:`Grid unit <grid_controls>`. A mouse *drag*
-creates the note like a click does, but allows continuously setting the
-duration of the note until the mouse button is released.
+In the **Draw** `mode <toolbox>`, new notes can be added with a click or
+a click-and-drag: a mouse *click* creates a note at the pointer location
+(or the nearest grid anchor if grid is enabled), and its duration is one
+:ref:`Grid unit <grid_controls>`. A mouse *drag* creates the note like a
+click does, but allows continuously setting the duration of the note
+until the mouse button is released.
+
+It's also possible to *brush notes* by pressing Shift,
+clicking, and dragging to the right.  New notes will be painted at an
+interval defined by global  quantization, with the length defined in the
+editor toolbar (see below).
 
 The toolbar available in the Draw mode helps drawing notes of exact
 length, in a certain MIDI channel, with predefined velocity:
