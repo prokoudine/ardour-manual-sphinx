@@ -5,12 +5,12 @@ New/Open Session dialog
 
 The initial session dialog, displayed at each start of Ardour, consists of several consecutive pages:
 
-Open Session page
------------------
+Recent page
+-----------
 
 .. figure:: images/session_setup.png
    :alt: The Session Setup dialog
-   :class: right-float
+   :width: 50%
 
 On this page, an existing session can be opened. Any :ref:`snapshot <snapshots>` of a particular session can also be accessed by clicking on the arrow next to the session name to display all snapshots, and then selecting one.
 
@@ -18,12 +18,27 @@ If the session is not displayed in the **Recent Sessions** list, the **Other Ses
 
 Alternatively, a new session can be created.
 
-New Session page
+Open page
+---------
+
+.. figure:: images/open-session-page.png
+   :alt: The Session Setup dialog
+   :width: 50%
+
+This page allows to open an arbitrary session from the disk.
+
+Available options are:
+
+-  Regular Ardour sessions
+-  Ardour session archives
+-  Sessions in the Advanced Authoring Format (AAF)
+
+New page
 ----------------
 
 .. figure:: images/session_new.png
    :alt: The New Session Dialog
-   :class: right-float
+   :width: 50%
 
 This page allows to type in the name of a session, select a folder to save it in, and optionally use an existing :ref:`template <session-templates>`. The different templates, both the "factory" ones and the ones created by the user, are easily available on the left-side panel.
 
@@ -31,7 +46,7 @@ Depending on the chosen template, a specific **Template Setup** window may be sh
 
 .. figure:: images/template-setup.png
    :alt: Template Setup dialog
-   :class: right-float
+   :width: 50%
 
 Templates can be huge time savers when working on similar projects, or on usual projects, as they allow to preset and tweak a lot of the :ref:`session properties <session_properties>`, (like the availability of a :ref:`monitoring section <monitor_section>`, connection to a Master Bus, etc.), and handle the creation of :ref:`tracks <adding_tracks_busses_and_vcas>` of any kind.
 
