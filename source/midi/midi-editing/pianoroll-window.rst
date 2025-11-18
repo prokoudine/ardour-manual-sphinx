@@ -65,7 +65,7 @@ Note display controls:
    be edited
 -  Note mode selector: whether to display notes in regular or drum
    (diamond-shaped) mode
--  Follow playhead: whether the pianoroll window should automatocally
+-  Follow playhead: whether the pianoroll window should automatically
    scroll horizontally to follow the playhead
 
 Note editing controls:
@@ -127,7 +127,7 @@ Bender, Pressure, Modulation) enables it.
    :width: 100.0%
 
 To enable or disable an automation lane, click on the small LED
-indicator to the left of its name on the bottoom toolbar.
+indicator to the left of its name on the bottom toolbar.
 
 The area can display data from multiple controllers, overlaid on top of
 each other, but only one automation lane is editable at the time.
