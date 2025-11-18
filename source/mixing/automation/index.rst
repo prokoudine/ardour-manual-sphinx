@@ -13,3 +13,4 @@ Automation
    automation-curves.rst
    automation-modes.rst
    track-automation.rst
+   region-fx.rst
