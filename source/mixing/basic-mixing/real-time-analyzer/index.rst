@@ -36,6 +36,13 @@ from low (20Hz) on the left to high (20kHz) on the right, while the
 vertical axis shows power level going from 6dB at the top to -80dB at
 the bottom.
 
+By default, the RTA window displays values in the 0dB..-60dB range.
+To see the opposite ends of the power range (0db to 6ddB and -60dB to
+-80dB), hover over the right side of the dialog and use the scrollbar.
+
+You can also drag the top and the bottom ends of the scrollbar position
+indicator to zoom in and out.
+
 .. figure:: images/rta-chart.png
    :alt: Real-Time Analyzer chart
    :width: 100%
@@ -44,9 +51,7 @@ Taller "peaks" indicate frequencies with more power, while "valleys"
 show frequencies with less power.
 
 Hovering over the chart displays the frequency/power pair at the bottom
-of the dialog numerically. To see the opposite ends of the power range
-(0db to 6ddB and -60dB to -80dB), hover over the right side of the dialog
-and the the scrollbar.
+of the dialog numerically.
 
 As audio plays, the display updates continuously. It's possible to
 temporarily pause the visual update of the spectrum display to inspect
