@@ -47,13 +47,10 @@ Changing start/end/duration
    :kbd:`Alt` modifier must be added to these shortcuts.
 
 Quantization
-   :kbd:`q` will quantize the selected notes using the current
-   quantize settings. If the quantize settings have not been set for this
-   session yet, the quantize dialog will appear. :kbd:`Alt-q` will display
-   the quantize dialog to allow editing the current quantize settings, and
-   then will quantize the selected notes. The default quantize settings
-   are: quantize note starts to the current grid setting, no swing, no
-   threshold, full strength.
+   :kbd:`q` will display the Quantize dialog to allow editing the current
+   quantize settings, and then will quantize the selected notes. 
+   The default quantize settings are: quantize note starts to the current
+   grid setting, no swing, no threshold, full strength.
 
 Step Entry, Quantize, etc.
    Refer to the :ref:`Step Entry <step_entry>`,
