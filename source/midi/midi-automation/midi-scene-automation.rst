@@ -26,7 +26,15 @@ MIDI scene (bank/program change) messages should be recorded.
 
 Whenever the global record enable button is engaged and Ardour's
 transport is rolling, a new marker will be created for each scene change
-message received via the "Scene In" port.
+message received via the **Scene In** port.
+
+Ardour will also capture program change events as MIDI data and display
+them inside MIDI regions.
+
+.. figure:: images/pg-change-in-midi-region.png
+   :alt: Program change marker inside a MIDI region
+
+   Program change marker inside a MIDI region
 
 If two different scene changes are received within a certain time
 period, only the later one will be recorded as a new marker. The default
@@ -41,7 +49,10 @@ millisecond.
 Manually creating scene changes
 -------------------------------
 
-This feature is not currently implemented.
+All location markers carry MIDI scene change information, thus adding
+a new location marker creates a scene change. Whether this information
+is processed depends on what plugin, software, or hardware unit is
+listening to the MIDI events that Ardour transmits.
 
 Playing back scene changes
 --------------------------
@@ -57,9 +68,24 @@ past each marker with a scene change associated with it.
 Editing scene changes
 ---------------------
 
-This feature is not currently implemented.
+To edit a MIDI scene change, double-click on a location marker and
+change program number, bank number, and channel number as required,
+and click **Edit** to confirm the changes.
+
+.. figure:: images/edit-midi-scene-change.png
+   :alt: Editing MIDI scene change parameters
+   :width: 125px
+
+   Editing MIDI scene change parameters
+
+To reset scene change to defaults (program number 1, bank number 1,
+channel 1), double-click on a location marker, enable the **Clear
+scene change** checkbox, and click **Edit**.
 
 Disabling scene changes
 -----------------------
 
-This feature is not currently implemented.
+This feature is not currently implemented. However, you can prevent
+MIDI scene change data from being transmitted outside Ardour. To do
+that, disconnect the Scene Out port from whatever port it is connected
+to.
