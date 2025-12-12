@@ -26,7 +26,14 @@ MIDI scene (bank/program change) messages should be recorded.
 
 Whenever the global record enable button is engaged and Ardour's
 transport is rolling, a new marker will be created for each scene change
-message received via the **Scene In** port.
+message received via the **Scene In** port. Markers created for
+MIDI scene changes are automatically named as "scene [N]", where N is
+the program number that Ardour captured.
+
+.. figure:: images/midi-scene-change-ruler.png
+   :alt: MIDI scene change marker on the ruler
+
+   MIDI scene change marker on the ruler
 
 Ardour will also capture program change events as MIDI data and display
 them inside MIDI regions.
