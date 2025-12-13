@@ -9,6 +9,7 @@ Ardour's interface
    main-menu/index
    status-bar/index
    transport-bar/index
+   record-punch-options/index
    transport-clocks/index
    selection-and-punch-clocks/index
    mini-timeline/index
@@ -22,6 +23,3 @@ Ardour's interface
    strips-list/index
    mixer-strips/index
    editor-tracks/index
-   track-and-bus-groups/index
-   quick-groups/index
-   monitor-section/index
