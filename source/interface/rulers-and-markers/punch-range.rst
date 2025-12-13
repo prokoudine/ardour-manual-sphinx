@@ -4,7 +4,8 @@ Punch range
 ===========
 
 The punch range is a special range used to define where recording will
-start and/or stop during a punch.
+start and/or stop during a punch. Punch range markers show up on the 
+Region Markers ruler.
 
 Creating a punch range
 ----------------------
@@ -21,7 +22,7 @@ Editing a punch range
 The punch range can be edited in multiple ways as well.
 
 -  Individual markers can be dragged on the ruler by left-clicking and dragging. It is also possible to drag both the start and the end markers togother. Left-click and select both markers, then drag them.
--  Positions of the start and the end markers can be edited numerically in the :ref:`Ranges & Marks <the_ranges_and_marks_lists>` sidebar.
+-  Positions of the start and the end markers can be edited numerically in the :ref:`Ranges & Marks <ranges_and_marks_lists>` sidebar.
 -  Positions of the start and the end markers can also be reset from another range selection by making that selection, then right-clicking and selecting the **Set Range from Selection** menu item.
 
 Removing a punch range
@@ -30,7 +31,7 @@ Removing a punch range
 There are two ways to delete a punch range:
 
 #. Right-click on one of the punch range markers and select the **Remove Range** menu item.
-#. Click the :kbd:`X` button in the list of ranges in the :ref:`Ranges & Marks <the_ranges_and_marks_lists>` sidebar.
+#. Click the :kbd:`X` button in the list of ranges in the :ref:`Ranges & Marks <ranges_and_marks_lists>` sidebar.
 
 More options
 ------------

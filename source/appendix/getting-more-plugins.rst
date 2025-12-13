@@ -28,7 +28,7 @@ LV2
 LADSPA
 ~~~~~~
 
--  Kokkini Zita http://kokkinizita.linuxaudio.org/linuxaudio/ [GNU
+-  Kokkini Zita http://kokkinizita.linux01audio.org/linuxaudio/ [GNU
    GPL/GNU GPLv3]
 -  Blepvco
    `http://www.smbolton.com/linux.html <http://smbolton.com/linux.html>`__

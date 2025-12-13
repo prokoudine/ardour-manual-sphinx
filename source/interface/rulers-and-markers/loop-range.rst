@@ -3,7 +3,9 @@
 Loop range
 ==========
 
-The loop range is a special range that defines the start and end points for loop play, which can be enabled in the transport bar.
+The loop range is a special range that defines the start and end points
+for loop play, which can be enabled in the transport bar. Loop range
+markers show up on the Region Markers ruler.
 
 .. _creating_loop_range:
 
@@ -37,7 +39,7 @@ Editing a Loop Range
 The loop range can be edited in multiple ways as well.
 
 -  Individual markers can be dragged on the ruler by left-clicking and dragging. It is also possible to drag both the start and the end markers togother. Left-click and select both markers, then drag them.
--  Positions of the start and the end markers can be edited numerically in the :ref:`Ranges & Marks <the_ranges_and_marks_lists>` sidebar.
+-  Positions of the start and the end markers can be edited numerically in the :ref:`Ranges & Marks <ranges_and_marks_lists>` sidebar.
 -  Positions of the start and the end markers can also be reset from another range selection by making that selection, then right-clicking and selecting the **Set Range from Selection** menu item.
 
 .. _removing_oop_range:
@@ -48,7 +50,7 @@ Removing a Loop Range
 There are two ways to delete a loop range:
 
 #. Right-clicking and selecting the Remove Range menu item.
-#. Click the :kbd:`X` button in the list of ranges in the :ref:`Ranges & Marks <the_ranges_and_marks_lists>` sidebar.
+#. Click the :kbd:`X` button in the list of ranges in the :ref:`Ranges & Marks <ranges_and_marks_lists>` sidebar.
 
 More Options
 ------------
