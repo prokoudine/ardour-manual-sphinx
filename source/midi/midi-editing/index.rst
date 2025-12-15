@@ -33,6 +33,7 @@ Here are the key features of MIDI editing in Ardour:
    :caption: Contents
 
    pianoroll-window.rst
+   region-editor.rst
    controlling-midi-range.rst
    add-new-notes.rst
    handling-overlapping-notes.rst
