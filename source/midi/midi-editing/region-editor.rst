@@ -24,7 +24,7 @@ windows <pianoroll_window>`.
 Region properties pane
 ----------------------
 
-This pane displays essential information about the MIDI region.
+This pane displays essential information about the audio or MIDI region.
 
 .. figure:: images/pianoroll-window-region-properties.png
    :alt: Region properties
@@ -55,7 +55,7 @@ Playback controls:
 -  Loop-playback the region until stopped
 -  Solo toggle for the track where the region is located
 
-Note display controls:
+Note display controls (for MIDI regions and clips):
 
 -  Select visible MIDI channel: notes on this channel will be editable,
    notes on other channels will be displayed as ghost notes that cannot
@@ -65,7 +65,7 @@ Note display controls:
 -  Follow playhead: whether the pianoroll window should automatically
    scroll horizontally to follow the playhead
 
-Note editing controls:
+Note editing controls (for MIDI regions and clips):
 
 -  Draw vs Edit mode selection
 -  Snapping toggle: enables or disables snapping to selected grid units
@@ -82,8 +82,8 @@ Zoom controls:
 -  Zoom to show the entire region
 -  Zoom focus mode
 
-Note area
----------
+Note or audio waveform area
+---------------------------
 
 This areas displays all editable notes and provides control for panning
 between staves and tweaking the beginning and the end of the region.
@@ -115,9 +115,9 @@ Drawing and editing MIDI notes works the same way as in the main window:
 Automation area
 ---------------
 
-This area displays note velocity and controllers and is disabled by
-default. Clicking on any of the available controller options (Velocity,
-Bender, Pressure, Modulation) enables it.
+For MIDI regions and clips, this area displays note velocity and
+controllers and is disabled by default. Clicking on any of the available
+controller options (Velocity, Bender, Pressure, Modulation) enables it.
 
 .. figure:: images/pianoroll-window-automation-area.png
    :alt: Automation area in the pianoroll window
