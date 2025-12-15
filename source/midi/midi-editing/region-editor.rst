@@ -85,8 +85,9 @@ Zoom controls:
 Note or audio waveform area
 ---------------------------
 
-This areas displays all editable notes and provides control for panning
-between staves and tweaking the beginning and the end of the region.
+For MIDI regions or clips, this areas displays all editable notes and
+provides control for panning between staves and tweaking the beginning
+and the end of the region.
 
 .. figure:: images/pianoroll-window-editing-area.png
    :alt: Note editing area in the pianoroll window
