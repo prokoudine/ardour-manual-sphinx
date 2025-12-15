@@ -6,6 +6,7 @@ Editing basics
    :caption: Contents
 
    working-with-regions.rst
+   region-editor.rst
    region-naming.rst
    corresponding-regions-selection.rst
    region-context-menu.rst
