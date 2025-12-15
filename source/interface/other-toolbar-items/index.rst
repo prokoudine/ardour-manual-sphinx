@@ -109,6 +109,24 @@ The number of buttons (precisely, the number of columns of two buttons) can be s
 
 Left-clicking an affected button launches the script or shortcut, while right-clicking or clicking an unaffected button allows change the script/shortcut the button should execute.
 
+.. _pane_controls:
+
+Pane controls
+-------------
+
+These buttons control the visibility of panes in Ardour windows:
+
+- The right sidebar (Editor list) and the bottom pane in the Editor window
+- The bottom pane and the right sidebar (Cue list) in the Cue window
+- The left sidebar in the Mixer window
+
+.. figure:: images/pane-controls.png
+   :alt: Pane controls
+
+   Pane controls
+
+The Recorder window currrently has no panes to control.
+
 .. _appbar_mode_selector:
 
 The mode selector
