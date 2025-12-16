@@ -94,16 +94,20 @@ button to add the mapping to the list.
 
 The Actions drop-down list contains three shortcuts:
 
--  **Clear Mapping** removes all mappings between internal tracks/busses and
-   external states.
--  **Import all as new tracks** removes all mappings and creates new ones
-   where all external states are imported as new tracks.
+-  **Clear Mapping** removes all mappings between internal
+   tracks/busses and external states.
+-  **Import all as new tracks** removes all mappings and creates new
+   ones where all external tracks and busses are imported as new
+   tracks.
+-  **Import visible as new tracks** removes all mappings and creates
+   new ones where only visible external tracks and busses are imported
+   as new tracks.
 -  **Reset** restores default mappings (master bus + the first three
    tracks).
 
-The **Show all local tracks** toggle enabled displaying all available tracks
-and busses in the currently opened session rather than the the first
-three ones by default.
+The **Show all local tracks** toggle enabled displaying all available
+tracks and busses in the currently opened session rather than the the
+first three ones by default.
 
 Click **OK** to complete importing mixer strips to the current session.
 
