@@ -24,6 +24,7 @@ Basic mixing
    muting-soloing/index
    panning/index
    mixer-scenes/index
+   saving-importing-mixer-strips/index
    loudness-analyzer-and-normalizer/index
    real-time-analyzer/index
    monitor-section/index
